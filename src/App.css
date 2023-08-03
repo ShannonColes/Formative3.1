@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* header--------------- */
+/* NAVBAR CSS START--------------------------------- */
+#navbar {
+  padding: 1rem 4rem;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#title-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#title-search a {
+  text-decoration: none;
+  color: black;
+}
+
+#input-icon input {
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+#drop-down-list {
+  text-align: center;
+  margin: 0.5rem 0rem;
+}
+#drop-down-list li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+#drop-down-list a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+#drop-down-list select {
+  border: none;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#country {
+  width: 4.6rem;
+}
+#language {
+  width: 6.2rem;
+}
+#topic {
+  width: 6rem;
+}
+
+/* NAVBAR CSS END--------------------------------- */
+
+/* HOMEPAGE CSS START ---------------------------- */
+#solid-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 16%;
+  height: 3rem;
+  margin: 4rem 0rem;
+  background: red;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: -3.8rem;
+  cursor: pointer;
+}
+
+/* Grid articles-------------------------------------------- */
+
+/* container used for centering the grid container */
+.centering-article-container {
+  margin: auto;
+  width: 96%;
+}
+
+/* Grid container for articles */
+.article-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Automatically fit columns, each with minimum 300px width */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+/* Grid item styles */
+.article-item {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.article-item:hover {
+  border: 1px solid red;
+}
+
+/* Big grid items for the first two articles */
+.article-item.big {
+  grid-column-end: span 2;
+  grid-row-end: span 2; /* Make the big items span 2 rows */
+}
+.article-item.big img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Styling for the rest of the articles */
+.article-item.small {
+  grid-column-end: span 1;
+  grid-row-end: span 1; /* Make the small items span 1 row (default) */
+}
+.article-item.small img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Align the "Read More" button to the bottom */
+.article-item button {
+  margin-top: auto;
+}
+
+/* HOMEPAGE CSS END ---------------------------- */
+
+/* FOOTER CSS START ---------------------------- */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem;
+  margin: 4rem 0rem 0rem 0rem;
+  background: black;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+/* fOOTER CSS END ---------------------------- */
+
+/* SINGLE ARTICLE ---------------------------- */
+.article-render {
+  width: 50%;
+}
+.article-render img {
+  width: 100%;
+  border-radius: 1rem;
+  margin: 0.8rem 0rem;
+}
+
+.article-render p {
+  margin-top: 0.5rem;
+}
+.italic {
+  font-style: italic;
+}
+.source {
+  margin-bottom: 0.8rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+.single-article-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.globe {
+  animation: pulse-black 4s infinite;
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+/* ABOUTPAGE SECTION ---------------------------------------- */
+
+.about-me {
+  display: flex;
+  justify-content: center;
+}
+.about-me-text {
+  width: 40%;
+  margin: 4rem 0rem 0rem 4rem;
+}
+
+.about-me-text p {
+  margin: 0.5rem 0rem;
+}
+
+.contact-about-btn {
+  background: none;
+  color: red;
+  border: 1px solid #ffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.8s ease;
+  cursor: pointer;
+}
+
+.contact-about-btn:hover {
+  border: 1px solid red;
+}
+
+.me-image-container {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-position: center;
+}
+.me-image-container img {
+  width: 100%;
+}
+
+/* media query------------------------------------------- */
+@media (max-width: 1312px) {
+  .article-grid-container {
+    grid-template-columns: repeat(1 1fr auto-fill, minmax(300px, 1fr));
+  }
+
+  /* Set big items to span 1 row in small screen layout */
+  .article-item.big {
+    grid-row-end: span 1;
+  }
+  .article-item.small {
+    grid-row-end: span 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .article-grid-container {
+    grid-template-columns: repeat(auto-fill);
+  }
+  .article-item.big {
+    grid-column-end: span 1;
+    grid-row-end: span 1; /* Make the big items span 2 rows */
+  }
+  .article-item.small {
+    grid-column-end: span 1;
+    grid-row-end: span 1; /* Make the big items span 2 rows */
+  }
+}
